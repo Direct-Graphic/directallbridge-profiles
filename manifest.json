@@ -1,0 +1,24 @@
+{
+  "version": "1.0",
+  "certified_threshold": 10,
+  "profiles": [
+    {
+      "slug": "cogilog-factures",
+      "name": "COGILOG Factures",
+      "softwareName": "COGILOG",
+      "category": "compta",
+      "country": "FR",
+      "description": "Export des factures WooCommerce vers COGILOG Gestion. Structure hiérarchique avec en-têtes pièce et lignes articles.",
+      "status": "pending",
+      "sales_count": 0,
+      "certified_threshold": 10,
+      "price": 29,
+      "currency": "EUR",
+      "purchase_url": "",
+      "download_url": "https://raw.githubusercontent.com/Direct-Graphic/directallbridge-profiles/main/COGILOG/cogilog-factures/profile.json",
+      "submitted_at": "2026-05-07T00:00:00Z",
+      "rating": 5.0,
+      "rating_count": 1
+    }
+  ]
+}
