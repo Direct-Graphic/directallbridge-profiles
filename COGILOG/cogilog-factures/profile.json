@@ -1,0 +1,185 @@
+{
+  "slug": "cogilog-factures",
+  "name": "COGILOG Factures",
+  "softwareName": "COGILOG",
+  "version": "1.0",
+  "country": "FR",
+  "category": "compta",
+  "description": "Export des factures WooCommerce vers COGILOG Gestion. Structure hiérarchique avec en-têtes pièce et lignes articles.",
+  "entityType": "orders_with_products",
+  "structureType": "hierarchical",
+  "encoding": "macroman",
+  "separator": "\t",
+  "lineEnding": "CRLF",
+  "dateFormat": "dd/MM/yyyy",
+  "decimalSeparator": ".",
+  "defaultKeyword": "*DEFAULT",
+  "fileHeader": "**Gestion\tFactures",
+  "includeColumnHeaders": false,
+  "locked": true,
+  "status": "pending",
+  "headerColumns": [
+    {
+      "id": "col-h-1",
+      "name": "Date pièce",
+      "position": 1,
+      "source": "order.date_created",
+      "fixedValue": "",
+      "dateFormat": "dd/MM/yyyy",
+      "promptLabel": "",
+      "required": false
+    },
+    {
+      "id": "col-h-2",
+      "name": "Code client",
+      "position": 2,
+      "source": "ask_at_export",
+      "fixedValue": "",
+      "dateFormat": "",
+      "promptLabel": "Code client",
+      "required": false
+    },
+    {
+      "id": "col-h-3",
+      "name": "Mode facturation",
+      "position": 3,
+      "source": "default_keyword",
+      "fixedValue": "*DEFAULT",
+      "dateFormat": "",
+      "promptLabel": "",
+      "required": false
+    },
+    {
+      "id": "col-h-4",
+      "name": "Mode paiement",
+      "position": 4,
+      "source": "default_keyword",
+      "fixedValue": "*DEFAULT",
+      "dateFormat": "",
+      "promptLabel": "",
+      "required": false
+    },
+    {
+      "id": "col-h-5",
+      "name": "Date échéance",
+      "position": 5,
+      "source": "default_keyword",
+      "fixedValue": "*DEFAULT",
+      "dateFormat": "",
+      "promptLabel": "",
+      "required": false
+    },
+    {
+      "id": "col-h-6",
+      "name": "Nom client",
+      "position": 12,
+      "source": "billing.last_first_name",
+      "fixedValue": "",
+      "dateFormat": "",
+      "promptLabel": "",
+      "required": false
+    },
+    {
+      "id": "col-h-7",
+      "name": "Code postal",
+      "position": 17,
+      "source": "billing.postcode",
+      "fixedValue": "",
+      "dateFormat": "",
+      "promptLabel": "",
+      "required": false
+    },
+    {
+      "id": "col-h-8",
+      "name": "Ville",
+      "position": 18,
+      "source": "billing.city",
+      "fixedValue": "",
+      "dateFormat": "",
+      "promptLabel": "",
+      "required": false
+    },
+    {
+      "id": "col-h-9",
+      "name": "Email",
+      "position": 23,
+      "source": "billing.email",
+      "fixedValue": "",
+      "dateFormat": "",
+      "promptLabel": "",
+      "required": false
+    }
+  ],
+  "lineColumns": [
+    {
+      "id": "col-l-1",
+      "name": "Vide obligatoire",
+      "position": 1,
+      "source": "empty",
+      "fixedValue": "",
+      "dateFormat": "",
+      "promptLabel": "",
+      "required": false
+    },
+    {
+      "id": "col-l-2",
+      "name": "Code produit",
+      "position": 2,
+      "source": "item.sku",
+      "fixedValue": "",
+      "dateFormat": "",
+      "promptLabel": "",
+      "required": false
+    },
+    {
+      "id": "col-l-3",
+      "name": "Libellé",
+      "position": 3,
+      "source": "item.name",
+      "fixedValue": "",
+      "dateFormat": "",
+      "promptLabel": "",
+      "required": false
+    },
+    {
+      "id": "col-l-4",
+      "name": "Prix unitaire HT",
+      "position": 4,
+      "source": "item.unit_price",
+      "fixedValue": "",
+      "dateFormat": "",
+      "promptLabel": "",
+      "required": false
+    },
+    {
+      "id": "col-l-5",
+      "name": "Quantité",
+      "position": 6,
+      "source": "item.quantity",
+      "fixedValue": "",
+      "dateFormat": "",
+      "promptLabel": "",
+      "required": false
+    },
+    {
+      "id": "col-l-6",
+      "name": "Code TVA",
+      "position": 8,
+      "source": "fixed",
+      "fixedValue": "4",
+      "dateFormat": "",
+      "promptLabel": "",
+      "required": false
+    },
+    {
+      "id": "col-l-7",
+      "name": "Taux TVA",
+      "position": 9,
+      "source": "item.tax_rate",
+      "fixedValue": "",
+      "dateFormat": "",
+      "promptLabel": "",
+      "required": false
+    }
+  ]
+}
