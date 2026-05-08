@@ -25,7 +25,7 @@
             "name": "COGILOG Gestion Import oli",
             "description": "description",
             "version": "1.0.0",
-            "price": 10,
+            "price": 10.01,
             "purchase_url": "https:\/\/directallbridge.com\/acheter\/cogilog-factures",
             "download_url": "https:\/\/raw.githubusercontent.com\/Direct-Graphic\/directallbridge-profiles\/main\/cogilog-gestion-import-oli\/profile.json"
         }
