@@ -3,7 +3,6 @@
     "name": "Gestion Stocks Update",
     "softwareName": "Gestion Stocks",
     "version": "1.0",
-    "country": "FR",
     "category": "compta",
     "description": "Stock quantity update for products using Gestion Stocks directives.",
     "entityType": "orders_with_products",
@@ -38,5 +37,6 @@
             "required": false
         }
     ],
-    "lineColumns": []
+    "lineColumns": [],
+    "locked": true
 }
