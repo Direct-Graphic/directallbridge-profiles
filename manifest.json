@@ -32,6 +32,19 @@
             "download_url": "https:\/\/raw.githubusercontent.com\/Direct-Graphic\/directallbridge-profiles\/main\/cogilog-gestion-import-fc\/profile.json",
             "status": "active",
             "submitted_at": "2026-05-08T14:13:03+00:00"
+        },
+        {
+            "slug": "cogilog-gestion-suppliers",
+            "name": "COGILOG Gestion Suppliers Import",
+            "softwareName": "COGILOG Gestion",
+            "description": "azertyu",
+            "version": "1.0.0",
+            "price": 300,
+            "currency": "EUR",
+            "purchase_url": "#",
+            "download_url": "https:\/\/raw.githubusercontent.com\/Direct-Graphic\/directallbridge-profiles\/main\/cogilog-gestion-suppliers\/profile.json",
+            "status": "active",
+            "submitted_at": "2026-05-08T14:32:12+00:00"
         }
     ]
 }
