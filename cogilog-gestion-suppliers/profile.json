@@ -3,7 +3,6 @@
     "name": "COGILOG Gestion Suppliers Import",
     "softwareName": "COGILOG Gestion",
     "version": "1.0",
-    "country": "FR",
     "category": "compta",
     "description": "Import profile for suppliers into COGILOG Gestion",
     "entityType": "orders_with_products",
@@ -109,5 +108,6 @@
             "promptLabel": "",
             "required": false
         }
-    ]
+    ],
+    "locked": true
 }
