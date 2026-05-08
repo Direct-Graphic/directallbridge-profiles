@@ -1,0 +1,143 @@
+{
+    "slug": "cogilog-gestion-import-oli",
+    "name": "COGILOG Gestion Import oli",
+    "softwareName": "COGILOG Gestion",
+    "version": "1.0",
+    "country": "FR",
+    "category": "compta",
+    "description": "Import profile for COGILOG Gestion orders with line items.",
+    "entityType": "orders_with_products",
+    "structureType": "hierarchical",
+    "encoding": "utf-8",
+    "separator": "\t",
+    "lineEnding": "CRLF",
+    "dateFormat": "dd/MM/yyyy",
+    "decimalSeparator": ".",
+    "defaultKeyword": "*DEFAULT",
+    "fileHeader": "**Gestion\tFactures\t16875.77\t0",
+    "includeColumnHeaders": false,
+    "headerColumns": [
+        {
+            "id": "86a5fbc3-9f84-4d5a-aea3-aae0f564f4fc",
+            "name": "Date de la pièce",
+            "position": 1,
+            "source": "order.date_created",
+            "dateFormat": "dd/MM/yyyy",
+            "fixedValue": "",
+            "promptLabel": "",
+            "required": false
+        },
+        {
+            "id": "ec09bd8e-0e59-43a0-8531-3e4fd1c4529e",
+            "name": "Code client ou FNS",
+            "position": 2,
+            "source": "customer.unique_code",
+            "dateFormat": "",
+            "fixedValue": "",
+            "promptLabel": "",
+            "required": false
+        },
+        {
+            "id": "30c2c387-d61f-4c1a-80a9-5c0c5e3db0d5",
+            "name": "Mode de facturation",
+            "position": 3,
+            "source": "default_keyword",
+            "dateFormat": "",
+            "fixedValue": "*DEFAULT",
+            "promptLabel": "",
+            "required": false
+        },
+        {
+            "id": "5f55d1ca-86df-4329-9919-aed6a7760414",
+            "name": "Mode de paiement proposé",
+            "position": 4,
+            "source": "order.payment_method_title",
+            "dateFormat": "",
+            "fixedValue": "",
+            "promptLabel": "",
+            "required": false
+        },
+        {
+            "id": "6c6ade6d-dcbc-4cf3-bc03-0f5b006979f2",
+            "name": "Date échéance",
+            "position": 5,
+            "source": "default_keyword",
+            "dateFormat": "",
+            "fixedValue": "*DEFAULT",
+            "promptLabel": "",
+            "required": false
+        },
+        {
+            "id": "6b9070f7-16f6-4e72-8dbc-23d1e06c1c77",
+            "name": "Net HT",
+            "position": 111,
+            "source": "order.subtotal",
+            "dateFormat": "",
+            "fixedValue": "",
+            "promptLabel": "",
+            "required": false
+        },
+        {
+            "id": "c43ad9f5-8399-4917-9f55-19f21de29157",
+            "name": "Montant TVA",
+            "position": 112,
+            "source": "order.total_tax",
+            "dateFormat": "",
+            "fixedValue": "",
+            "promptLabel": "",
+            "required": false
+        }
+    ],
+    "lineColumns": [
+        {
+            "id": "0a758dda-ea2f-49bb-bda8-a99c4f4b1013",
+            "name": "Code produit",
+            "position": 2,
+            "source": "item.sku",
+            "dateFormat": "",
+            "fixedValue": "",
+            "promptLabel": "",
+            "required": false
+        },
+        {
+            "id": "5ae7075c-7151-4e4e-ae51-e5a607030f95",
+            "name": "Libellé de la ligne",
+            "position": 3,
+            "source": "item.name",
+            "dateFormat": "",
+            "fixedValue": "",
+            "promptLabel": "",
+            "required": false
+        },
+        {
+            "id": "8cbe7afd-0e2a-4b6c-ae96-bf4cee0b569c",
+            "name": "Prix unitaire HT",
+            "position": 4,
+            "source": "item.unit_price",
+            "dateFormat": "",
+            "fixedValue": "",
+            "promptLabel": "",
+            "required": false
+        },
+        {
+            "id": "6771b0e4-b6ff-4841-bb95-8b1cf8a69245",
+            "name": "Quantité",
+            "position": 6,
+            "source": "item.quantity",
+            "dateFormat": "",
+            "fixedValue": "",
+            "promptLabel": "",
+            "required": false
+        },
+        {
+            "id": "82cf471e-3ebc-4ae0-a5ca-8c13f554b6dd",
+            "name": "Taux de TVA",
+            "position": 9,
+            "source": "item.tax_rate",
+            "dateFormat": "",
+            "fixedValue": "",
+            "promptLabel": "",
+            "required": false
+        }
+    ]
+}
