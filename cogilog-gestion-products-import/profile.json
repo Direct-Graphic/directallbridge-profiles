@@ -1,0 +1,142 @@
+{
+    "slug": "cogilog-gestion-products-import",
+    "name": "COGILOG Gestion Products Import",
+    "softwareName": "COGILOG Gestion",
+    "version": "1.0",
+    "country": "FR",
+    "category": "compta",
+    "description": "Profile for importing product data into COGILOG Gestion.",
+    "entityType": "orders_with_products",
+    "structureType": "hierarchical",
+    "encoding": "utf-8",
+    "separator": "\t",
+    "lineEnding": "CRLF",
+    "dateFormat": "dd/MM/yyyy",
+    "decimalSeparator": ".",
+    "defaultKeyword": "*DEFAULT",
+    "fileHeader": "**Gestion",
+    "includeColumnHeaders": false,
+    "headerColumns": [
+        {
+            "id": "067e6162-3b6f-4ae2-a171-2470b63dff00",
+            "name": "Famille",
+            "position": 1,
+            "source": "item.name",
+            "dateFormat": "",
+            "fixedValue": "",
+            "promptLabel": "",
+            "required": false
+        },
+        {
+            "id": "067e6162-3b6f-4ae2-a171-2470b63dff01",
+            "name": "Code",
+            "position": 2,
+            "source": "item.sku",
+            "dateFormat": "",
+            "fixedValue": "",
+            "promptLabel": "",
+            "required": false
+        },
+        {
+            "id": "067e6162-3b6f-4ae2-a171-2470b63dff02",
+            "name": "Libellé",
+            "position": 3,
+            "source": "item.name",
+            "dateFormat": "",
+            "fixedValue": "",
+            "promptLabel": "",
+            "required": false
+        },
+        {
+            "id": "067e6162-3b6f-4ae2-a171-2470b63dff03",
+            "name": "Unité",
+            "position": 4,
+            "source": "item.unit",
+            "dateFormat": "",
+            "fixedValue": "",
+            "promptLabel": "",
+            "required": false
+        },
+        {
+            "id": "067e6162-3b6f-4ae2-a171-2470b63dff04",
+            "name": "Prix de vente unitaire",
+            "position": 5,
+            "source": "item.unit_price",
+            "dateFormat": "",
+            "fixedValue": "",
+            "promptLabel": "",
+            "required": false
+        },
+        {
+            "id": "067e6162-3b6f-4ae2-a171-2470b63dff05",
+            "name": "Code TVA",
+            "position": 7,
+            "source": "item.tax_rate",
+            "dateFormat": "",
+            "fixedValue": "",
+            "promptLabel": "",
+            "required": false
+        },
+        {
+            "id": "067e6162-3b6f-4ae2-a171-2470b63dff06",
+            "name": "Gère stock",
+            "position": 11,
+            "source": "fixed",
+            "dateFormat": "",
+            "fixedValue": "OUI",
+            "promptLabel": "",
+            "required": false
+        },
+        {
+            "id": "067e6162-3b6f-4ae2-a171-2470b63dff07",
+            "name": "Alerte sur stock",
+            "position": 12,
+            "source": "fixed",
+            "dateFormat": "",
+            "fixedValue": "OUI",
+            "promptLabel": "",
+            "required": false
+        },
+        {
+            "id": "067e6162-3b6f-4ae2-a171-2470b63dff08",
+            "name": "Stock",
+            "position": 13,
+            "source": "item.quantity",
+            "dateFormat": "",
+            "fixedValue": "",
+            "promptLabel": "",
+            "required": false
+        },
+        {
+            "id": "067e6162-3b6f-4ae2-a171-2470b63dff09",
+            "name": "Valeur unitaire pour valorisation du stock",
+            "position": 14,
+            "source": "item.unit_price",
+            "dateFormat": "",
+            "fixedValue": "",
+            "promptLabel": "",
+            "required": false
+        },
+        {
+            "id": "067e6162-3b6f-4ae2-a171-2470b63dff0a",
+            "name": "Notes",
+            "position": 29,
+            "source": "empty",
+            "dateFormat": "",
+            "fixedValue": "",
+            "promptLabel": "",
+            "required": false
+        },
+        {
+            "id": "067e6162-3b6f-4ae2-a171-2470b63dff0b",
+            "name": "Type de prix",
+            "position": 72,
+            "source": "ask_at_export",
+            "dateFormat": "",
+            "fixedValue": "",
+            "promptLabel": "Saisir 0 pour ht ou 1 pour ttc",
+            "required": true
+        }
+    ],
+    "lineColumns": []
+}
