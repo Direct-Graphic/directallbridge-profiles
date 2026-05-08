@@ -3,7 +3,6 @@
     "name": "COGILOG Gestion Import Profile",
     "softwareName": "COGILOG Gestion",
     "version": "1.0",
-    "country": "FR",
     "category": "compta",
     "description": "Profile for importing orders with products into COGILOG Gestion software",
     "entityType": "orders_with_products",
