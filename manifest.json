@@ -19,15 +19,6 @@
             "submitted_at": "2026-05-07T00:00:00Z",
             "rating": 5,
             "rating_count": 1
-        },
-        {
-            "slug": "cogilog-gestion-import-oli",
-            "name": "COGILOG Gestion Import oli",
-            "description": "description 2",
-            "version": "1.0.0",
-            "price": 15,
-            "purchase_url": "https:\/\/directallbridge.com\/acheter\/cogilog-factures",
-            "download_url": "https:\/\/raw.githubusercontent.com\/Direct-Graphic\/directallbridge-profiles\/main\/cogilog-gestion-import-oli\/profile.json"
         }
     ]
 }
