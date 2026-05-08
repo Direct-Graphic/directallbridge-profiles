@@ -1,24 +1,37 @@
 {
-  "version": "1.0",
-  "certified_threshold": 10,
-  "profiles": [
-    {
-      "slug": "cogilog-factures",
-      "name": "COGILOG Factures",
-      "softwareName": "COGILOG",
-      "category": "compta",
-      "country": "FR",
-      "description": "Export des factures WooCommerce vers COGILOG Gestion. Structure hierarchique avec en-têtes pièce et lignes articles.",
-      "status": "pending",
-      "sales_count": 0,
-      "certified_threshold": 10,
-      "price": 29,
-      "currency": "EUR",
-      "purchase_url": "https://directallbridge.com/acheter/cogilog-factures",
-      "download_url": "https://raw.githubusercontent.com/Direct-Graphic/directallbridge-profiles/main/COGILOG/cogilog-factures/profile.json",
-      "submitted_at": "2026-05-07T00:00:00Z",
-      "rating": 5.0,
-      "rating_count": 1
-    }
-  ]
+    "version": "1.0",
+    "certified_threshold": 10,
+    "profiles": [
+        {
+            "slug": "cogilog-factures",
+            "name": "COGILOG Factures",
+            "softwareName": "COGILOG",
+            "category": "compta",
+            "country": "FR",
+            "description": "Export des factures WooCommerce vers COGILOG Gestion. Structure hierarchique avec en-têtes pièce et lignes articles.",
+            "status": "pending",
+            "sales_count": 0,
+            "certified_threshold": 10,
+            "price": 29,
+            "currency": "EUR",
+            "purchase_url": "https:\/\/directallbridge.com\/acheter\/cogilog-factures",
+            "download_url": "https:\/\/raw.githubusercontent.com\/Direct-Graphic\/directallbridge-profiles\/main\/COGILOG\/cogilog-factures\/profile.json",
+            "submitted_at": "2026-05-07T00:00:00Z",
+            "rating": 5,
+            "rating_count": 1
+        },
+        {
+            "slug": "cogilog_gestion_import_profile",
+            "name": "COGILOG Gestion Import Profile",
+            "softwareName": "COGILOG Gestion",
+            "description": "",
+            "version": "1.0.0",
+            "price": 15,
+            "currency": "EUR",
+            "purchase_url": "",
+            "download_url": "https:\/\/raw.githubusercontent.com\/Direct-Graphic\/directallbridge-profiles\/main\/cogilog_gestion_import_profile\/profile.json",
+            "status": "active",
+            "submitted_at": "2026-05-08T13:03:04+00:00"
+        }
+    ]
 }
