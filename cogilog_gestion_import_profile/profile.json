@@ -1,202 +1,203 @@
 {
-    "slug": "cogilog_gestion_import_profile",
-    "name": "COGILOG Gestion Import Profile",
-    "softwareName": "COGILOG Gestion",
-    "version": "1.0",
-    "category": "compta",
-    "description": "Profile for importing orders with products into COGILOG Gestion software",
-    "entityType": "orders_with_products",
-    "structureType": "hierarchical",
-    "encoding": "utf-8",
-    "separator": "\t",
-    "lineEnding": "CRLF",
-    "dateFormat": "dd/MM/yyyy",
-    "decimalSeparator": ".",
-    "defaultKeyword": "*DEFAULT",
-    "fileHeader": "**Gestion\tFactures",
-    "includeColumnHeaders": false,
-    "headerColumns": [
-        {
-            "id": "7f8b9c8a-6f5f-4d1a-9bd3-a09a71239e8a",
-            "name": "Date de la pièce",
-            "position": 1,
-            "source": "order.date_created",
-            "dateFormat": "dd/MM/yyyy",
-            "fixedValue": "",
-            "promptLabel": "",
-            "required": false
-        },
-        {
-            "id": "d5c63c3f-5b79-4df9-b9c8-e49c71e5f82e",
-            "name": "Code client",
-            "position": 2,
-            "source": "ask_at_export",
-            "dateFormat": "",
-            "fixedValue": "",
-            "promptLabel": "Code client",
-            "required": true
-        },
-        {
-            "id": "eb37cb14-278e-4b42-b8e0-182abae2697b",
-            "name": "Mode de facturation",
-            "position": 3,
-            "source": "default_keyword",
-            "dateFormat": "",
-            "fixedValue": "*DEFAULT",
-            "promptLabel": "",
-            "required": false
-        },
-        {
-            "id": "3ab5efe0-3af4-4ce9-a794-1279ff9faa61",
-            "name": "Nom",
-            "position": 12,
-            "source": "billing.last_first_name",
-            "dateFormat": "",
-            "fixedValue": "",
-            "promptLabel": "",
-            "required": false
-        },
-        {
-            "id": "c1d623d8-e54f-4ca9-b237-7b5df8c7f8bd",
-            "name": "Adresse",
-            "position": 13,
-            "source": "billing.address_1",
-            "dateFormat": "",
-            "fixedValue": "",
-            "promptLabel": "",
-            "required": false
-        },
-        {
-            "id": "db29b686-9b0e-4d17-96a5-8931c27123c7",
-            "name": "Code Postal",
-            "position": 17,
-            "source": "billing.postcode",
-            "dateFormat": "",
-            "fixedValue": "",
-            "promptLabel": "",
-            "required": false
-        },
-        {
-            "id": "5dafe512-7cf0-47e4-82a2-6d9872933f1f",
-            "name": "Ville",
-            "position": 18,
-            "source": "billing.city",
-            "dateFormat": "",
-            "fixedValue": "",
-            "promptLabel": "",
-            "required": false
-        },
-        {
-            "id": "b2c1e255-4a85-4d01-8925-f05b3e927e48",
-            "name": "Pays",
-            "position": 20,
-            "source": "billing.country",
-            "dateFormat": "",
-            "fixedValue": "",
-            "promptLabel": "",
-            "required": false
-        },
-        {
-            "id": "34803f71-7751-4d73-821a-13f6ec32f0ab",
-            "name": "Téléphone",
-            "position": 21,
-            "source": "billing.phone",
-            "dateFormat": "",
-            "fixedValue": "",
-            "promptLabel": "",
-            "required": false
-        },
-        {
-            "id": "6b103bfd-ee3f-46f6-aa41-3a245cf29790",
-            "name": "IBAN",
-            "position": 73,
-            "source": "default_keyword",
-            "dateFormat": "",
-            "fixedValue": "*DEFAULT",
-            "promptLabel": "",
-            "required": false
-        }
-    ],
-    "lineColumns": [
-        {
-            "id": "ef9c3f38-5561-4cb5-8dad-86b8f1d946ce",
-            "name": "Code produit",
-            "position": 2,
-            "source": "item.sku",
-            "dateFormat": "",
-            "fixedValue": "",
-            "promptLabel": "",
-            "required": false
-        },
-        {
-            "id": "49e347fa-7abc-4b1c-a8e6-afcce7d9b60f",
-            "name": "Libellé de la ligne",
-            "position": 3,
-            "source": "item.name",
-            "dateFormat": "",
-            "fixedValue": "",
-            "promptLabel": "",
-            "required": false
-        },
-        {
-            "id": "0dcb70fa-8c83-4272-843d-7cd8e9637f57",
-            "name": "Prix unitaire ht",
-            "position": 4,
-            "source": "item.unit_price",
-            "dateFormat": "",
-            "fixedValue": "",
-            "promptLabel": "",
-            "required": false
-        },
-        {
-            "id": "b411d2d8-8139-4fc1-91ff-ffbb27e1c84f",
-            "name": "Unité",
-            "position": 5,
-            "source": "item.unit",
-            "dateFormat": "",
-            "fixedValue": "",
-            "promptLabel": "",
-            "required": false
-        },
-        {
-            "id": "e6e01529-e6ff-4b3c-bbc0-5ccb573e4caf",
-            "name": "Quantité",
-            "position": 6,
-            "source": "item.quantity",
-            "dateFormat": "",
-            "fixedValue": "",
-            "promptLabel": "",
-            "required": false
-        },
-        {
-            "id": "2242b499-fdae-4b44-83be-9f1f3c6b68dc",
-            "name": "Taux de remise",
-            "position": 7,
-            "source": "default_keyword",
-            "dateFormat": "",
-            "fixedValue": "*DEFAULT",
-            "promptLabel": "",
-            "required": false
-        },
-        {
-            "id": "68c1fb26-d892-478e-a144-9d54869c7f14",
-            "name": "Code tva",
-            "position": 8,
-            "source": "default_keyword",
-            "dateFormat": "",
-            "fixedValue": "*DEFAULT",
-            "promptLabel": "",
-            "required": false
-        },
-        {
-            "id": "7e5aa7fd-6d3f-4a75-8285-98f8b25051b4",
-            "name": "Taux tva",
-            "position": 9,
-            "source": "item.tax_rate",
-            "dateFormat": "",
-            "fixedValue": "",
-            "promptLabel": "",
-            "required": false
-        }
-    ]
+  "slug": "cogilog_gestion_import_profile",
+  "name": "COGILOG Gestion Import Profile",
+  "softwareName": "COGILOG Gestion",
+  "version": "1.0",
+  "category": "compta",
+  "description": "Profile for importing orders with products into COGILOG Gestion software",
+  "entityType": "orders_with_products",
+  "structureType": "hierarchical",
+  "encoding": "utf-8",
+  "separator": "\t",
+  "lineEnding": "CRLF",
+  "dateFormat": "dd/MM/yyyy",
+  "decimalSeparator": ".",
+  "defaultKeyword": "*DEFAULT",
+  "fileHeader": "**Gestion\tFactures",
+  "includeColumnHeaders": false,
+  "headerColumns": [
+    {
+      "id": "7f8b9c8a-6f5f-4d1a-9bd3-a09a71239e8a",
+      "name": "Date de la pièce",
+      "position": 1,
+      "source": "order.date_created",
+      "dateFormat": "dd/MM/yyyy",
+      "fixedValue": "",
+      "promptLabel": "",
+      "required": false
+    },
+    {
+      "id": "d5c63c3f-5b79-4df9-b9c8-e49c71e5f82e",
+      "name": "Code client",
+      "position": 2,
+      "source": "ask_at_export",
+      "dateFormat": "",
+      "fixedValue": "",
+      "promptLabel": "Code client",
+      "required": true
+    },
+    {
+      "id": "eb37cb14-278e-4b42-b8e0-182abae2697b",
+      "name": "Mode de facturation",
+      "position": 3,
+      "source": "default_keyword",
+      "dateFormat": "",
+      "fixedValue": "*DEFAULT",
+      "promptLabel": "",
+      "required": false
+    },
+    {
+      "id": "3ab5efe0-3af4-4ce9-a794-1279ff9faa61",
+      "name": "Nom",
+      "position": 12,
+      "source": "billing.last_first_name",
+      "dateFormat": "",
+      "fixedValue": "",
+      "promptLabel": "",
+      "required": false
+    },
+    {
+      "id": "c1d623d8-e54f-4ca9-b237-7b5df8c7f8bd",
+      "name": "Adresse",
+      "position": 13,
+      "source": "billing.address_1",
+      "dateFormat": "",
+      "fixedValue": "",
+      "promptLabel": "",
+      "required": false
+    },
+    {
+      "id": "db29b686-9b0e-4d17-96a5-8931c27123c7",
+      "name": "Code Postal",
+      "position": 17,
+      "source": "billing.postcode",
+      "dateFormat": "",
+      "fixedValue": "",
+      "promptLabel": "",
+      "required": false
+    },
+    {
+      "id": "5dafe512-7cf0-47e4-82a2-6d9872933f1f",
+      "name": "Ville",
+      "position": 18,
+      "source": "billing.city",
+      "dateFormat": "",
+      "fixedValue": "",
+      "promptLabel": "",
+      "required": false
+    },
+    {
+      "id": "b2c1e255-4a85-4d01-8925-f05b3e927e48",
+      "name": "Pays",
+      "position": 20,
+      "source": "billing.country",
+      "dateFormat": "",
+      "fixedValue": "",
+      "promptLabel": "",
+      "required": false
+    },
+    {
+      "id": "34803f71-7751-4d73-821a-13f6ec32f0ab",
+      "name": "Téléphone",
+      "position": 21,
+      "source": "billing.phone",
+      "dateFormat": "",
+      "fixedValue": "",
+      "promptLabel": "",
+      "required": false
+    },
+    {
+      "id": "6b103bfd-ee3f-46f6-aa41-3a245cf29790",
+      "name": "IBAN",
+      "position": 73,
+      "source": "default_keyword",
+      "dateFormat": "",
+      "fixedValue": "*DEFAULT",
+      "promptLabel": "",
+      "required": false
+    }
+  ],
+  "lineColumns": [
+    {
+      "id": "ef9c3f38-5561-4cb5-8dad-86b8f1d946ce",
+      "name": "Code produit",
+      "position": 2,
+      "source": "item.sku",
+      "dateFormat": "",
+      "fixedValue": "",
+      "promptLabel": "",
+      "required": false
+    },
+    {
+      "id": "49e347fa-7abc-4b1c-a8e6-afcce7d9b60f",
+      "name": "Libellé de la ligne",
+      "position": 3,
+      "source": "item.name",
+      "dateFormat": "",
+      "fixedValue": "",
+      "promptLabel": "",
+      "required": false
+    },
+    {
+      "id": "0dcb70fa-8c83-4272-843d-7cd8e9637f57",
+      "name": "Prix unitaire ht",
+      "position": 4,
+      "source": "item.unit_price",
+      "dateFormat": "",
+      "fixedValue": "",
+      "promptLabel": "",
+      "required": false
+    },
+    {
+      "id": "b411d2d8-8139-4fc1-91ff-ffbb27e1c84f",
+      "name": "Unité",
+      "position": 5,
+      "source": "item.unit",
+      "dateFormat": "",
+      "fixedValue": "",
+      "promptLabel": "",
+      "required": false
+    },
+    {
+      "id": "e6e01529-e6ff-4b3c-bbc0-5ccb573e4caf",
+      "name": "Quantité",
+      "position": 6,
+      "source": "item.quantity",
+      "dateFormat": "",
+      "fixedValue": "",
+      "promptLabel": "",
+      "required": false
+    },
+    {
+      "id": "2242b499-fdae-4b44-83be-9f1f3c6b68dc",
+      "name": "Taux de remise",
+      "position": 7,
+      "source": "default_keyword",
+      "dateFormat": "",
+      "fixedValue": "*DEFAULT",
+      "promptLabel": "",
+      "required": false
+    },
+    {
+      "id": "68c1fb26-d892-478e-a144-9d54869c7f14",
+      "name": "Code tva",
+      "position": 8,
+      "source": "default_keyword",
+      "dateFormat": "",
+      "fixedValue": "*DEFAULT",
+      "promptLabel": "",
+      "required": false
+    },
+    {
+      "id": "7e5aa7fd-6d3f-4a75-8285-98f8b25051b4",
+      "name": "Taux tva",
+      "position": 9,
+      "source": "item.tax_rate",
+      "dateFormat": "",
+      "fixedValue": "",
+      "promptLabel": "",
+      "required": false
+    }
+  ],
+  "locked": true
 }
