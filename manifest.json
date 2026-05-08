@@ -25,7 +25,7 @@
             "name": "COGILOG Gestion Import Profile",
             "description": "teste test",
             "version": "1.0.0",
-            "price": 20,
+            "price": 50,
             "purchase_url": "#",
             "download_url": "https:\/\/raw.githubusercontent.com\/Direct-Graphic\/directallbridge-profiles\/main\/cogilog_gestion_import_profile\/profile.json"
         }
