@@ -3,7 +3,6 @@
     "name": "COGILOG Gestion Import fc",
     "softwareName": "COGILOG Gestion",
     "version": "1.0",
-    "country": "FR",
     "category": "compta",
     "description": "Import profile for COGILOG Gestion with a focus on invoices and orders.",
     "entityType": "orders_with_products",
@@ -209,5 +208,6 @@
             "promptLabel": "",
             "required": false
         }
-    ]
+    ],
+    "locked": true
 }
