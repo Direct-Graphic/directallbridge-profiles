@@ -23,15 +23,11 @@
         {
             "slug": "cogilog_gestion_import_profile",
             "name": "COGILOG Gestion Import Profile",
-            "softwareName": "COGILOG Gestion",
-            "description": "",
+            "description": "teste test",
             "version": "1.0.0",
             "price": 15,
-            "currency": "EUR",
-            "purchase_url": "",
-            "download_url": "https:\/\/raw.githubusercontent.com\/Direct-Graphic\/directallbridge-profiles\/main\/cogilog_gestion_import_profile\/profile.json",
-            "status": "active",
-            "submitted_at": "2026-05-08T13:03:04+00:00"
+            "purchase_url": "#",
+            "download_url": "https:\/\/raw.githubusercontent.com\/Direct-Graphic\/directallbridge-profiles\/main\/cogilog_gestion_import_profile\/profile.json"
         }
     ]
 }
