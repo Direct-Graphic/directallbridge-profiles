@@ -32,6 +32,19 @@
             "download_url": "https:\/\/raw.githubusercontent.com\/Direct-Graphic\/directallbridge-profiles\/main\/cogilog-gestion-suppliers\/profile.json",
             "status": "active",
             "submitted_at": "2026-05-08T14:32:12+00:00"
+        },
+        {
+            "slug": "gestion-stocks-update",
+            "name": "Gestion Stocks Update",
+            "softwareName": "Gestion Stocks",
+            "description": "putain putain",
+            "version": "1.0.0",
+            "price": 1000,
+            "currency": "EUR",
+            "purchase_url": "#",
+            "download_url": "https:\/\/raw.githubusercontent.com\/Direct-Graphic\/directallbridge-profiles\/main\/gestion-stocks-update\/profile.json",
+            "status": "active",
+            "submitted_at": "2026-05-08T15:05:00+00:00"
         }
     ]
 }
