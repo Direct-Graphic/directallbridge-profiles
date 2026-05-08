@@ -23,9 +23,9 @@
         {
             "slug": "cogilog_gestion_import_profile",
             "name": "COGILOG Gestion Import Profile 2",
-            "description": "teste test tsts",
+            "description": "teste test tsts arge",
             "version": "1.0.0",
-            "price": 50.990000000000002,
+            "price": 60,
             "purchase_url": "#",
             "download_url": "https:\/\/raw.githubusercontent.com\/Direct-Graphic\/directallbridge-profiles\/main\/cogilog_gestion_import_profile\/profile.json"
         }
